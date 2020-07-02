@@ -20,7 +20,7 @@ data$DT[1:5]
 class(data$DT)
 
 
-## Construct the 2nd plot and 
+## Construct the 4th plot and 
 ## save it to a PNG file with a width of 480 pixels and a height of 480 pixels.
 
 png(file="plot4.png", width=480, height=480)

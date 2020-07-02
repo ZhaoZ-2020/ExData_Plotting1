@@ -9,6 +9,13 @@ classes <- sapply(tempdata, class)
 data<-read.table("household_power_consumption.txt", sep=";", col.names=colna,
                  colClasses=classes, skip=66637, nrows=2880)
 
+## Check for missing values
+grep("\\?", data$Voltage)
+grep("\\?", data$Global_active_power)
+grep("\\?", data$Global_reactive_power)
+grep("\\?", data$Sub_metering_1)
+grep("\\?", data$Sub_metering_2)
+grep("\\?", data$Sub_metering_3)
 
 
 ## Construct the 1st plot and 
